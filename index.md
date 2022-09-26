@@ -22,6 +22,35 @@ I need to invest more into iterator stream talks and generator stream talks and 
 
 for example every Java code should get rewriten to GraalJS to speed up Application Development also for interop graal-node inlining and mksnapshot need talks to explain why this leads to faster consistent modular code reuse with less code.
 
+#### Conclusion from me the creator of Stealify
+I have worked on OpenStack, GraalVM, v8, SpiderMonkey, Systemd, DBUS, libcontainer, WASM, RUST, LLVM, Typescript, Rollup, git subtree, WebRTC, Kubernetes, Chromium and all its flavors like Android and LaCrOS, Fuchsia OS Zircon & FIDL Design, Linux Kernel, git annex, IPFS, btrfs to name only a few Projects there where even more. What you and i maybe Observe Directly is that this is a Large Set of Really Large Software Stacks but i hope it makes sense that they are all more or less related to each other.
+
+The Main Relations are fundamental principels and Problems they are sympthoms of problems that we try to solve in the existing ecosystem with our existing old thinking. I started to Tackle the Problems at the root and i guess i had success! I Saw the Patterns and did take away all abstractions as i saw the most where bad while there is a need for abstraction in general it is importent where we do that abstraction to do not end up in unlimited nested layers of abstraction that make our head explode.
+
+as Many of my Loved Co Authors where i took my inspiration from and validated my results do aggree in the following rules they are fundamental
+
+- Capability Based Protocols (handels)
+- async / await 
+- sharedArrayBuffers
+- stdio/files is the last resort of compat and will be only needed until everything is Stealify.
+- We Build Stack Machines this way we are isolated from the ground up 
+- consistent
+- reuseable
+- simple 
+- composition over inharitance
+- functions can return functions but they need to produce the correct return stack a importent implementation detail.
+- mutex futex pth is at present the best we did come up with because we had no flow control before now we could go deterministic
+- eval is not bad for a compiler it is needed but the environment in that the evaluation happens matters. See Context concepts. Confined Isolated and so on.
+
+Explaining why Dart was a failure but a good try. Dart in general was made with some right concepts and some wrong concepts as always.
+
+- Classes are bad in General
+- Flutter is bad in general everything that flutter does well needs to be ported to a more modular browser stack
+- a new language is bad in general only to solve the module problem 
+- JS Can Compile Static see mksnapshot and wasm in general it is always clever to use the Template abilitys of JS to Replace C++ Markos which are text search replace and Rust Macros which are lisp. As also follow some design patterns for the code and use Typescript annotations or JSDOC from time to time. 
+- It could use LLVM 
+- How Ever all that is solved with JavaScript Core which is LLVM Based.
+
 
 ## September Update
 
