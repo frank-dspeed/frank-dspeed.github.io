@@ -3,6 +3,26 @@
 This is the English Version of my Blog i do really quick writeups here in none corrected slang. While i try to improve them over time.
 I do not maintain a German one at present but maybe i will do a youtube channel.
 
+## 01-10-2022 Update
+i am trying to sum up the learnings from the v8 heads and try to explain why stealify is better then dart and the other concepts
+- https://www.youtube.com/watch?v=P8ltWIqDPzo
+
+In general it is importent to mention that classes and inharitance are not for code reuse they need to get avoided functional reactive programming is the feature classes where needed in a none event stream driven point in time today we want to express not only our code intend we also need flow controll cross multiple Environments and CPU Cores. This brings total new Challenges to a Coding Language while the good news is that writing functions that return functions is the way to go in ECMAScript and all other languages (Kotlin shows that well) 
+
+i want to demo and talk about es4x compared to raw Java and why it is the future of all Languages that run on the JVM via GraalVM.
+
+Most importent is the Concept of functional reactive streams as functions combined with a scheduler i need to talk more about the learnings of implementations like most and nils (native interactive live streams) i also need to explain eventing and promise chain streams.
+
+i also need to talk more about just js and the future of Coding. I Try to record a Podcast in English and German. 
+
+- Reduced boilerplate.
+- better show intent. 
+
+I need to invest more into iterator stream talks and generator stream talks and make the people understand more fast at scale while reading such text from me why they need to use that i need text examples that i put side by side so they get the concepts.
+
+for example every Java code should get rewriten to GraalJS to speed up Application Development also for interop graal-node inlining and mksnapshot need talks to explain why this leads to faster consistent modular code reuse with less code.
+
+
 ## September Update
 
 ### stealify-fs 
